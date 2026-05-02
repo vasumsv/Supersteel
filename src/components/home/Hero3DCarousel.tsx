@@ -21,7 +21,7 @@ const slides = [
   {
     id: 3,
     image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/slider/3.png',
-    title: 'INFRASTRUCTURE PROJECTS DELIVERED',
+    title: 'STEEL SUPPLIED TO INFRASTRUCTURE PROJECTS',
     subtitle: '1000+ construction projects supplied across the region',
     cta: 'Our Projects',
   },
