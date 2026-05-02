@@ -4,6 +4,9 @@ import { breadcrumbSchema } from '../utils/seoSchemas';
 
 const brands = [
   {
+    image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/brands/12.jpg',
+  },
+  {
     image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/brands/2.jpg',
   },
   {
@@ -25,9 +28,6 @@ const brands = [
     image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/brands/5.jpg',
   },
   {
-    image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/brands/12.jpg',
-  },
-  {
     image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/brands/8.jpg',
   },
   {
@@ -44,9 +44,6 @@ const brands = [
   },
   {
     image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/brands/9.jpg',
-  },
-  {
-    image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/brands/11.jpg',
   },
 ];
 
