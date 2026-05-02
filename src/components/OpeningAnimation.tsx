@@ -227,8 +227,8 @@ export default function OpeningAnimation({ onComplete }: { onComplete: () => voi
             alt="Super Steels Office"
             className="max-w-[70%] max-h-[65%] w-auto h-auto object-contain drop-shadow-2xl"
             initial={{ scale: 1.05, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
+            animate={{ scale: logoIntroComplete ? 1 : 1.05, opacity: logoIntroComplete ? 1 : 0 }}
+            transition={{ duration: 1.2, ease: 'easeOut' }}
           />
         </div>
 
