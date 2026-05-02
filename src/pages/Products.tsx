@@ -34,6 +34,10 @@ export default function Products() {
 
   const pipesAndTubes = [
     { name: 'Pipes & Tubes', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/PIPES%20AND%20TUBBES.png' },
+    { name: 'GI Square Pipe', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/sTRUCTURAL%20SECTIONS/GI%20SQUARE%20PIPE.png' },
+    { name: 'GI Round Pipe', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/sTRUCTURAL%20SECTIONS/GI%20ROUND%20PIPE.png' },
+    { name: 'MS Square Pipe', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/sTRUCTURAL%20SECTIONS/MS%20SQUARE%20PIPE.png' },
+    { name: 'MS Round Pipe', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/sTRUCTURAL%20SECTIONS/MS%20ROUND%20PIPE.png' },
   ];
 
   const roofingSheets = [
@@ -49,8 +53,21 @@ export default function Products() {
     { name: 'Ramco Cement', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/cement/16.jpg' },
   ];
 
+  const tmtGrades = [
+    { name: 'FE 550 Grade TMT Bar', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/fe%20550%20grade%20tmt%20bar%20.png' },
+    { name: 'FE 550D Grade TMT Bar', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/fe%20550%20grade%20tmt%20bar%20.png' },
+    { name: 'CRS Grade TMT Bar', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/crs%20grade%20tmt%20bar.png' },
+    { name: 'Epoxy Coated TMT Bar', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/epoxy%20coated%20tmt%20bar.png' },
+    { name: 'Cut and Bent TMT Bar', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/cur%20and%20bent%20tmt%20bar.png' },
+    { name: '4MM TMT Coil', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/4mm%20TMT%20Coil.png' },
+  ];
+
   const bindingWire = [
     { name: 'Binding Wire', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/BINDING%20WIRES.png' },
+    { name: 'MS Tata Binding Wire', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/ms%20tata%20binding%20wire.png' },
+    { name: 'Kamadhenu Binding Wire', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/kamadhenu%20binding%20wire.png' },
+    { name: 'Sunvik Binding Wire', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/sunbik%20binding%20wire.png' },
+    { name: 'GI Binding Wire', image: 'https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/tmt%20options%20and%20binding%20wires/gi%20binding%20wire.png' },
   ];
 
   return (
@@ -78,6 +95,50 @@ export default function Products() {
               Premium quality construction materials for builders, contractors, and engineers
             </p>
           </motion.div>
+        </div>
+      </section>
+
+      <section id="tmt-grades" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mb-10"
+          >
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-ss-navy mb-2 md:mb-3 uppercase">
+              Grades and Types for TMT Bar Available
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg text-[#6B6F74] max-w-3xl">
+              Multiple grades and forms of TMT bars to suit every construction requirement
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {tmtGrades.map((grade, index) => (
+              <motion.div
+                key={grade.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden group border border-gray-100"
+              >
+                <div className="h-[260px] bg-[#F4F5F7] flex items-center justify-center p-6 overflow-hidden">
+                  <img
+                    src={grade.image}
+                    alt={grade.name}
+                    loading="lazy"
+                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-5 bg-white border-t border-gray-100">
+                  <h3 className="text-base md:text-lg font-bold text-ss-navy uppercase tracking-wide">{grade.name}</h3>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
