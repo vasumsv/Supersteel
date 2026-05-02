@@ -214,17 +214,16 @@ export default function OpeningAnimation({ onComplete }: { onComplete: () => voi
         )}
       </AnimatePresence>
 
-      <div className="w-full h-full relative">
-        <div className="w-full h-full overflow-hidden">
+      <div className="w-full h-full relative bg-[#e0e5ea]">
+        <div className="w-full h-full flex items-center justify-center overflow-hidden">
           <motion.img
             src="https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/building%20logo.jpeg"
             alt="Super Steels Office"
-            className="w-full h-full object-cover"
-            initial={{ scale: 1.08 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 12, ease: 'easeOut' }}
+            className="max-w-[70%] max-h-[65%] w-auto h-auto object-contain drop-shadow-2xl"
+            initial={{ scale: 1.05, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
         </div>
 
         <motion.div
@@ -233,13 +232,13 @@ export default function OpeningAnimation({ onComplete }: { onComplete: () => voi
           transition={{ duration: 0.8, delay: 0.5 }}
           className="absolute bottom-8 left-4 md:bottom-12 md:left-16 text-left pointer-events-none z-10 max-w-[85%] md:max-w-none"
         >
-          <h1 className="text-2xl md:text-5xl font-black text-white tracking-tight mb-1" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontStretch: 'condensed' }}>
+          <h1 className="text-2xl md:text-5xl font-black text-[#222] tracking-tight mb-1" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontStretch: 'condensed' }}>
             SUPER STEELS
           </h1>
-          <p className="text-xs md:text-base text-gray-200 font-medium tracking-wide">
+          <p className="text-xs md:text-base text-[#555] font-medium tracking-wide">
             Structural Steel Supply Since 2003
           </p>
-          <p className="text-[10px] md:text-sm text-gray-300 font-normal mt-1">
+          <p className="text-[10px] md:text-sm text-[#777] font-normal mt-1">
             Mangalore | Udupi | Uttara Kannada
           </p>
         </motion.div>
@@ -256,7 +255,7 @@ export default function OpeningAnimation({ onComplete }: { onComplete: () => voi
                 src="/logo.png"
                 alt="Super Steels"
                 className="h-12 md:h-24 object-contain opacity-90"
-                style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.3))' }}
+                style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))' }}
               />
             </motion.div>
           )}
