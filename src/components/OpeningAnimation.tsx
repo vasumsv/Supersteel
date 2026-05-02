@@ -215,9 +215,15 @@ export default function OpeningAnimation({ onComplete }: { onComplete: () => voi
       </AnimatePresence>
 
       <div className="w-full h-full relative bg-[#e0e5ea]">
+        {/* Grid background matching original scene */}
+        <div className="absolute inset-0 pointer-events-none" style={{
+          backgroundImage: `linear-gradient(to right, #c0c4c8 1px, transparent 1px), linear-gradient(to bottom, #c0c4c8 1px, transparent 1px)`,
+          backgroundSize: '40px 40px',
+          opacity: 0.35,
+        }} />
         <div className="w-full h-full flex items-center justify-center overflow-hidden">
           <motion.img
-            src="https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/building%20logo.jpeg"
+            src="https://raw.githubusercontent.com/vasumsv/Vnova-Technologies/refs/heads/main/Super%20steel/building%20logo%20remove.png"
             alt="Super Steels Office"
             className="max-w-[70%] max-h-[65%] w-auto h-auto object-contain drop-shadow-2xl"
             initial={{ scale: 1.05, opacity: 0 }}
